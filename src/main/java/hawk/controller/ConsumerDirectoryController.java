@@ -9,7 +9,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/directory")
 @ConditionalOnProperty(value = "app.beta-endpoints", havingValue = "true", matchIfMissing = false)
-public class CustomerDirectoryController {
+public class ConsumerDirectoryController {
 
     private static final Map<String, Map<String, String>> DATA = Map.of(
             "u-123", Map.of("id", "u-123", "email", "alice@example.com"),
