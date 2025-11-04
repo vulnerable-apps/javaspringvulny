@@ -1,4 +1,4 @@
-FROM openjdk:11.0-jdk-slim
+FROM eclipse-temurin:17-jdk-jammy
 
 RUN mkdir /javavulny /app
 COPY . /javavulny/
