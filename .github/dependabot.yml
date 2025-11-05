@@ -1,0 +1,12 @@
+version: 2
+updates:
+  - package-ecosystem: "gradle"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    allow:
+      - dependency-type: "direct"
+    commit-message:
+      prefix: "fix:"
+      include: scope
+    open-pull-requests-limit: 5
